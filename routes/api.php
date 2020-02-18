@@ -16,3 +16,15 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// add state
+Route::post('state', 'ApiController@state');
+
+// add evaluation
+Route::post('evaluation', 'ApiController@evaluation');
+
+// add state
+Route::post('category', 'ApiController@category');
+
+// add availability
+Route::post('availability', 'ApiController@availability');
